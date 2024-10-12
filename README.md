@@ -59,7 +59,8 @@ O **Tensão Certa** é projetado para ser intuitivo e acessível, com uma interf
 ## 🔧 Tecnologias Utilizadas
 
 - **Kotlin**: Linguagem principal usada para desenvolver o aplicativo Android.
-- **Java**: Utilizado para importar a biblioteca AboutPage[(https://github.com/medyo/android-about-page)] e outras dependências.
+- **Java**: Utilizado para importar a biblioteca [AboutPage](https://github.com/medyo/android-about-page) e outras dependências.
+- **XML**: Para construção dos layouts.
 - **Jetpack Navigation**: Gerenciamento de navegação entre fragmentos.
 - **Data Binding**: Vinculação de componentes da interface com dados dinâmicos.
 - **View Binding**: Simplificação do acesso a views no código.
@@ -72,6 +73,7 @@ O **Tensão Certa** é projetado para ser intuitivo e acessível, com uma interf
 - **ClipboardManager**: Função para copiar dados para a área de transferência no Android.
 - **AdapterHistorico**: Classe customizada para adaptar e exibir o histórico de cálculos em uma lista.
 - **Model**: Estrutura de dados que representa o histórico, permitindo a fácil manipulação e exibição de informações.
+- **Interfaces**: Utilização de interfaces para abstrair a funcionalidade de salvar históricos. Por exemplo, a interface `OnHistoricoListener` é usada para adicionar novos itens ao histórico.
 
 
 ## Estrutura do Projeto
@@ -93,3 +95,22 @@ Possui um FloatingActionButton (Botão Flutuante de Ação) para exibir o histó
 
 ## 📫 Contato
 Se você tiver dúvidas, sugestões ou quiser contribuir para o projeto, sinta-se à vontade para entrar em contato comigo!
+
+## 🚀 Como Rodar o Projeto:
+## 📦 Instalação do APK
+
+Você pode instalar o aplicativo diretamente no seu dispositivo Android sem a necessidade de ter acesso ao Android Studio. Siga os passos abaixo:
+
+1. **Baixe o APK**:
+   - [Baixe aqui!](https://drive.google.com/file/d/1iRcgoV6-RjHUNv7roE3JEQqrx8HU8cm_/view?usp=drive_link)
+
+2. **Permita a instalação de aplicativos de fontes desconhecidas**:
+   - Ative a opção **Instalar aplicativos de fontes desconhecidas**. Se você estiver usando o Android 8.0 (Oreo) ou superior, será necessário permitir a instalação especificamente para o navegador ou gerenciador de arquivos que você usará para instalar o APK.
+
+3. **Instale o APK**:
+   - Localize o arquivo APK que você baixou, geralmente na pasta **Downloads**.
+   - Toque no arquivo APK para iniciar a instalação.
+   - Se aparecer uma mensagem de aviso de segurança do Google, não se preocupe! O aplicativo foi verificado e não contém vírus.
+
+4. **Conclua a instalação**:
+   - Siga as instruções na tela para concluir a instalação.
