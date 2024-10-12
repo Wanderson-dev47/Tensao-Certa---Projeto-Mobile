@@ -16,8 +16,8 @@ A tela inicial oferece um **menu principal** com opções para:
 Esta funcionalidade permite calcular o número de voltas necessárias no transformador para atingir uma tensão de saída específica com base na tensão de entrada.
 
 - **Entrada**: 
-  - Tensão de saída desejada (Vout)
-  - Tensão de entrada (Vin)
+  - Tensão de saída desejada `(Vout)`
+  - Tensão de entrada `(Vin)`
 - **Cálculo**: Utiliza fórmulas estabelecidas para determinar o número de voltas.
 - **Saída**: Exibe o número de voltas necessárias para o primário e o secundário.
 
@@ -25,8 +25,8 @@ Esta funcionalidade permite calcular o número de voltas necessárias no transfo
 Permite ao usuário calcular as voltas necessárias para um transformador baseado em uma tensão primária e uma tensão secundária desejada.
 
 - **Entrada**: 
-  - Tensão primária (Vin)
-  - Tensão secundária desejada (Vout)
+  - Tensão primária `(Vin)`
+  - Tensão secundária desejada `(Vout)`
 - **Cálculo**: Fórmulas matemáticas específicas para o cálculo de voltas.
 - **Saída**: Exibe o número de voltas para o primário e o secundário.
 
@@ -59,7 +59,7 @@ O **Tensão Certa** é projetado para ser intuitivo e acessível, com uma interf
 ## 🔧 Tecnologias Utilizadas
 
 - **Kotlin**: Linguagem principal usada para desenvolver o aplicativo Android.
-- **Java**: Utilizado para importar a biblioteca `AboutPage` e outras dependências.
+- **Java**: Utilizado para importar a biblioteca AboutPage[(https://github.com/medyo/android-about-page)] e outras dependências.
 - **Jetpack Navigation**: Gerenciamento de navegação entre fragmentos.
 - **Data Binding**: Vinculação de componentes da interface com dados dinâmicos.
 - **View Binding**: Simplificação do acesso a views no código.
