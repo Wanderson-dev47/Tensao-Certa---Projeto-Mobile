@@ -96,8 +96,9 @@ Possui um FloatingActionButton (Botão Flutuante de Ação) para exibir o histó
 ## 📫 Contato
 Se você tiver dúvidas, sugestões ou quiser contribuir para o projeto, sinta-se à vontade para entrar em contato comigo!
 
-## 🚀 Como Rodar o Projeto:
+
 ## 📦 Instalação do APK
+### 🚀 Como Rodar o Projeto?
 
 Você pode instalar o aplicativo diretamente no seu dispositivo Android sem a necessidade de ter acesso ao Android Studio. Siga os passos abaixo:
 
