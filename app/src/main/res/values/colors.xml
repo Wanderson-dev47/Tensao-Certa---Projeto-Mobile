@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="color_background">#F5F5F5</color>
+
+    <!-- Cores de Fundo -->
+    <color name="background_gradient_start">#E6F0FF</color> <!-- Azul Claro -->
+    <color name="background_gradient_end">#BFDBFE</color> <!-- Azul Médio -->
+
+    <!-- Cores de Texto -->
+    <color name="text_blue_dark">#1E40AF</color> <!-- Azul Escuro (Título Principal) -->
+    <color name="text_blue_medium">#2563EB</color> <!-- Azul Médio (Subtítulo) -->
+    <color name="text_white">#FFFFFF</color> <!-- Branco (Texto de Botão) -->
+    <color name="text_green_dark">#166534</color> <!-- Verde Escuro (Texto de Resultado) -->
+
+    <!-- Cores de Componentes -->
+    <color name="component_bg_blue_light">#E6F0FF</color> <!-- Azul Muito Claro (Fundo das Abas) -->
+    <color name="component_bg_white">#FFFFFF</color> <!-- Branco (Aba Ativa) -->
+    <color name="component_bg_blue_primary">#3B82F6</color> <!-- Azul (Botão Primário) -->
+    <color name="component_bg_blue_primary_hover">#2563EB</color> <!-- Azul Escuro (Botão Primário Hover) -->
+    <color name="component_bg_green_light">#DCFCE7</color> <!-- Verde Muito Claro (Fundo do Resultado) -->
+    <color name="component_bg_blue_light_history">#EFF6FF</color> <!-- Azul Muito Claro (Fundo do Histórico) -->
+
+    <!-- Cores de Bordas -->
+    <color name="border_gray_light">#D1D5DB</color> <!-- Cinza Claro (Borda de Inputs) -->
+
+    <!-- Cores Principais -->
+    <color name="blue_sky">#E6F0FF</color> <!-- Azul Céu -->
+    <color name="blue_cloud">#BFDBFE</color> <!-- Azul Nuvem -->
+    <color name="blue_royal">#3B82F6</color> <!-- Azul Royal -->
+    <color name="blue_sapphire">#2563EB</color> <!-- Azul Safira -->
+    <color name="blue_navy">#1E40AF</color> <!-- Azul Marinho -->
+    <color name="green_mint">#DCFCE7</color> <!-- Verde Menta -->
+    <color name="green_forest">#166534</color> <!-- Verde Floresta -->
+    <color name="gray_pearl">#D1D5DB</color> <!-- Cinza Pérola (para bordas) -->
+
+</resources>

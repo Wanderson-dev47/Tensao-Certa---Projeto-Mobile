@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="materiais">
+        <item>Selecione o material</item>
+        <item>Ferrite</item>
+        <item>Silício</item>
+    </string-array>
+</resources>

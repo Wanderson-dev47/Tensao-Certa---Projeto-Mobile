@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_primario"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_secundario"
+        android:icon="@drawable/ic_secundario"
+        android:title="@string/title_secundario" />
+
+    <item
+        android:id="@+id/navigation_ajuste"
+        android:icon="@drawable/ic_ajuste"
+        android:title="@string/title_ajuste" />
+
+    <item
+        android:id="@+id/navigation_nucleo"
+        android:icon="@drawable/ic_nucleo"
+        android:title="@string/title_nucleo" />
+
+</menu>

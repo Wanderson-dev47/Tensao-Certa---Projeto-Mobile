@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Tensão Certa</string>
+
+    <string name="title_home">Primário</string>
+    <string name="title_secundario">Secundário</string>
+    <string name="title_ajuste">Ajuste Fino</string>
+    <string name="title_nucleo">Núcleo </string>
+
+    <!-- Tela 1 -->
+    <string name="string_subtitle">Calcule e projete seus transformadores com facilidade</string>
+    <string name="title_tensao_saida">Tensão de Saida (Vout)</string>
+    <string name="hint_vout">Digite Vout (ex: 12.34)</string>
+    <string name="hint_vin">Digite Vin (ex: 12.34)</string>
+    <string name="title_tensao_entrada">Tensão de Entrada (Vin)</string>
+    <string name="string_btn">Calcular Primário</string>
+
+    <!-- Tela 2 -->
+    <string name="secundario_subtitle">Ajuste as voltas com precisão para o seu transformador</string>
+    <string name="title_tensao_saida_secundario">Tensão de Saida Desejada (Vout)</string>
+    <string name="hint_vout_secundario">Digite Vout (ex: 15.30)</string>
+    <string name="hint_vin_secundario">Digite Vin (ex: 15.30)</string>
+    <string name="title_tensao_entrada_secundario">Tensão de Entrada (Vin)</string>
+    <string name="string_btn_secundario">Calcular Secundário</string>
+
+    <!-- Tela 3 -->
+    <string name="ajuste_subtitle">Personalize cada detalhe para máxima eficiência</string>
+    <string name="title_ajuste_fino_volts">Ajuste Fino de Voltagem</string>
+    <string name="string_btn_ajuste">Calcular Ajuste</string>
+    <string name="ajuste_contador">0,0V</string>
+
+    <!-- Tela 4 -->
+    <string name="nucleo_subtitle">Otimize o núcleo para melhor desempenho e durabilidade</string>
+    <string name="title_comprimento">Comprimento do Núcleo (cm) </string>
+    <string name="title_largura">Largura do Núcleo (cm) </string>
+    <string name="digite_comprimento">Digite o comprimento (ex: 25.8)</string>
+    <string name="digite_largura">Digite a largura (ex: 15.4)</string>
+    <string name="title_material_nucleo">Material do Núcleo</string>
+    <string name="string_btn_nucleo">Calcular Núcleo</string>
+    <string name="area_nucleo">Área do núcleo:</string>
+    <string name="eficiencia_estimada">Eficiência estimada:</string>
+    <string name="resultado_eficiencia">95%</string>
+
+    <string name="select_material">Selecione o material</string>
+    <string name="material_ferrite">Ferrite</string>
+    <string name="material_silicio">Silício</string>
+    <string name="histórico">Ir para histórico</string>
+
+
+    <string name="info_desc">Botão sobre</string>
+    <string name="copiar_texto">Copiar texto</string>
+    <string name="linha_separador">Linha separador</string>
+    <string name="historico_titulo_fab">Histórico de Armazém de Dados</string>
+    <string name="ainda_nao_contem_dados">Ainda não contém dados.</string>
+
+
+</resources>
