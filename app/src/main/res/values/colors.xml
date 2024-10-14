@@ -20,15 +20,6 @@
     <color name="text_white">#FFFFFF</color> <!-- Branco (Texto de Botão) -->
     <color name="text_green_dark">#166534</color> <!-- Verde Escuro (Texto de Resultado) -->
 
-    <!-- Cores de Componentes -->
-    <color name="component_bg_blue_light">#E6F0FF</color> <!-- Azul Muito Claro (Fundo das Abas) -->
-    <color name="component_bg_white">#FFFFFF</color> <!-- Branco (Aba Ativa) -->
-    <color name="component_bg_blue_primary">#3B82F6</color> <!-- Azul (Botão Primário) -->
-    <color name="component_bg_blue_primary_hover">#2563EB</color> <!-- Azul Escuro (Botão Primário Hover) -->
-    <color name="component_bg_green_light">#DCFCE7</color> <!-- Verde Muito Claro (Fundo do Resultado) -->
-    <color name="component_bg_blue_light_history">#EFF6FF</color> <!-- Azul Muito Claro (Fundo do Histórico) -->
-
-    <!-- Cores de Bordas -->
     <color name="border_gray_light">#D1D5DB</color> <!-- Cinza Claro (Borda de Inputs) -->
 
     <!-- Cores Principais -->
@@ -40,5 +31,43 @@
     <color name="green_mint">#DCFCE7</color> <!-- Verde Menta -->
     <color name="green_forest">#166534</color> <!-- Verde Floresta -->
     <color name="gray_pearl">#D1D5DB</color> <!-- Cinza Pérola (para bordas) -->
+
+    <!-- Cores Vivas -->
+    <color name="blue">#0066FD</color>
+    <color name="red">#F75353</color>
+    <color name="yellow">#EDBF0A</color>
+    <color name="green">#10B880</color>
+    <color name="light_blue">#66C5FD</color>
+    <color name="orange">#F39D0B</color>
+    <color name="purple">#6C28D7</color>
+
+
+
+    <!-- Cores da versão clara -->
+    <color name="colorPrimaryLuz">#3B82F6</color> <!-- Azul Royal -->
+    <color name="colorOnPrimaryLuz">#FFFFFF</color> <!-- Azul Safira -->
+    <color name="colorPrimaryVariantLuz">#2563EB</color> <!-- Azul Safira -->
+    <color name="colorSecondaryLuz">#FF03DAC5</color>
+    <color name="colorSecondaryVariantLuz">#166534</color> <!-- Verde Floresta -->
+    <color name="colorOnSecondaryLuz">#FFFFFF</color> <!-- Verde Floresta -->
+    <color name="colorBackgroundLuz">#E6F0FF</color> <!-- Azul Céu -->
+    <color name="colorOnBackgroundLuz">#FFFFFF</color>
+    <color name="textColorHintLuz">#747474</color>
+
+
+    <!-- Cores da versão escura -->
+    <color name="colorPrimaryEscuro">#005b96</color> <!-- Azul Royal Escuro -->
+    <color name="colorOnPrimaryEscuro">#FFFFFF</color> <!-- Azul Royal Escuro -->
+    <color name="colorPrimaryVariantEscuro">#1E1D26</color> <!-- fundo_resultados -->
+    <color name="colorSecondaryEscuro">#018786</color> <!-- Verde Menta Escuro -->
+    <color name="colorSecondaryVariantEscuro">#0C4E00</color> <!-- Verde Floresta Escuro -->
+    <color name="colorOnSecondaryEscuro">#FFFFFF</color> <!-- Verde Floresta Escuro -->
+    <color name="colorBackgroundEscuro">#313746</color>
+    <color name="colorOnBackgroundEscuro">#1E1D26</color> <!-- Azul Céu -->
+    <color name="textColorHintEscuro">#A7A6AA</color>
+
+
+
+    <color name="blue_sapphire_dark">#005b96</color> <!-- Azul Safira Escuro -->
 
 </resources>

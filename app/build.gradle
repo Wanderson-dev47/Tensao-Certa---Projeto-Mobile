@@ -40,7 +40,6 @@ dependencies {
     // Biblioteca para exibir o sobre do APP
     implementation libs.medyo.android.about.page
 
-
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat
     implementation libs.material

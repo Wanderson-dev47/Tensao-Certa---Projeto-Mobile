@@ -8,25 +8,21 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="dominando.android.calculadoradetransformadores.ui.home.PrimarioFragment"
-        android:label="@string/title_home"
         tools:layout="@layout/fragment_primario" />
 
     <fragment
         android:id="@+id/navigation_secundario"
         android:name="dominando.android.calculadoradetransformadores.ui.secundario.SecundarioFragment"
-        android:label="@string/title_secundario"
         tools:layout="@layout/fragment_secundario" />
 
     <fragment
         android:id="@+id/navigation_ajuste"
         android:name="dominando.android.calculadoradetransformadores.ui.ajuste.AjusteFragment"
-        android:label="@string/title_ajuste"
         tools:layout="@layout/fragment_ajuste" />
 
     <fragment
         android:id="@+id/navigation_nucleo"
         android:name="dominando.android.calculadoradetransformadores.ui.nucleo.NucleoFragment"
-        android:label="@string/title_nucleo"
         tools:layout="@layout/fragment_nucleo" />
 
 </navigation>

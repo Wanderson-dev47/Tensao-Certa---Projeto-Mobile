@@ -50,7 +50,7 @@
                     android:id="@+id/btnCopiar"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:backgroundTint="#0003D8C3"
+                    android:backgroundTint="#BED9FC"
                     android:contentDescription="@string/copiar_texto"
                     android:src="@drawable/copy_icon"
                     app:layout_constraintBottom_toBottomOf="parent"

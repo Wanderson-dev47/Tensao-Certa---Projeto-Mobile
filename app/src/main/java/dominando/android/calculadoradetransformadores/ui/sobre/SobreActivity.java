@@ -16,7 +16,7 @@ public class SobreActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String descricao = "A Calculadora de Transformadores é uma ferramenta especializada e intuitiva, desenvolvida para engenheiros elétricos, estudantes e entusiastas da eletrônica. Ela facilita o cálculo exato das voltagens primárias e secundárias de transformadores, oferecendo uma interface simples e eficiente, projetada para fornecer resultados precisos com base em fórmulas matemáticas bem estabelecidas. Além disso, o aplicativo permite ajustes finos de tensão, possibilitando simulações práticas que auxiliam no design e na verificação de transformadores, tornando o processo mais rápido e acessível. Com a Calculadora de Transformadores, profissionais têm uma solução prática na palma da mão para lidar com as complexidades de seus projetos.";
+        String descricao = "O aplicativo Tensão Certa é uma ferramenta especializada e intuitiva, desenvolvida para engenheiros elétricos, estudantes e entusiastas da eletrônica. Ela facilita o cálculo exato das voltagens primárias e secundárias de transformadores, oferecendo uma interface simples e eficiente, projetada para fornecer resultados precisos com base em fórmulas matemáticas bem estabelecidas. Além disso, o aplicativo permite ajustes finos de tensão, possibilitando simulações práticas que auxiliam no design e na verificação de transformadores, tornando o processo mais rápido e acessível. Com a Calculadora de Transformadores, profissionais têm uma solução prática na palma da mão para lidar com as complexidades de seus projetos.";
 
         Element desenvolvedorDescricao = getElement();
 

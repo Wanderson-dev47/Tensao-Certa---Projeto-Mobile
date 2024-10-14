@@ -4,33 +4,36 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">#161C2D</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">#161C2D</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 
-    <!-- Quando tiver uma paleta de cores noturna alterar para DayNight.DarkActionBar -->
-    <style name="Theme.MeuTema" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="Theme.MeuTema" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/blue_royal</item> <!-- Azul Royal -->
-        <item name="colorPrimaryVariant">@color/blue_sapphire</item> <!-- Azul Safira -->
-        <item name="colorOnPrimary">@color/white</item> <!-- Branco -->
+        <item name="colorPrimary">@color/colorPrimaryEscuro</item> <!-- Azul Royal Escuro -->
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantEscuro</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryEscuro</item> <!-- Branco -->
 
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item> <!-- Verde Menta -->
-        <item name="colorSecondaryVariant">@color/green_forest</item> <!-- Verde Floresta -->
+        <item name="colorSecondary">@color/colorSecondaryEscuro</item> <!-- Verde Menta Escuro -->
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantEscuro</item> <!-- Verde Floresta Escuro -->
         <item name="colorOnSecondary">@color/white</item> <!-- Branco -->
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="statusBarBackground">?attr/colorPrimaryVariant</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:colorBackground">@color/blue_sky</item> <!-- Azul Céu como cor de fundo -->
+        <item name="android:colorBackground">@color/colorBackgroundEscuro</item> <!-- Preto como cor de fundo -->
+        <item name="colorOnBackground">@color/colorOnBackgroundEscuro</item>
+        <item name="android:textColorHint">@color/textColorHintEscuro</item>
     </style>
+
 
 </resources>

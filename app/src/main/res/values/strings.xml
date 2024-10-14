@@ -51,6 +51,10 @@
     <string name="linha_separador">Linha separador</string>
     <string name="historico_titulo_fab">Histórico de Armazém de Dados</string>
     <string name="ainda_nao_contem_dados">Ainda não contém dados.</string>
+    <string name="primario_ilustrcao">primario ilustração</string>
+    <string name="secundario_ilustracao">secundario ilustração</string>
+    <string name="ajuste_ilustracao">ajuste ilustração</string>
+    <string name="nucleo_ilustracao">nucleo ilustração\n</string>
 
 
 </resources>

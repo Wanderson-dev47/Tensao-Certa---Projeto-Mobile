@@ -2,6 +2,7 @@
 agp = "8.6.0"
 androidAboutPage = "2.0.0"
 androidAboutPageVersion = "2.0.0"
+appcompatVersion = "1.6.0"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -12,6 +13,7 @@ material = "1.12.0"
 constraintlayout = "2.1.4"
 lifecycleLivedataKtx = "2.8.6"
 lifecycleViewmodelKtx = "2.8.6"
+materialVersion = "1.8.0"
 navigationFragmentKtx = "2.8.2"
 navigationUiKtx = "2.8.2"
 legacySupportV4 = "1.0.0"
@@ -20,6 +22,7 @@ activity = "1.9.2"
 
 [libraries]
 android-about-page = { module = "com.github.medyo:android-about-page", version.ref = "androidAboutPage" }
+androidx-appcompat-v160 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -31,6 +34,7 @@ androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecy
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+material-v180 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
 medyo-android-about-page = { module = "io.github.medyo:android-about-page", version.ref = "androidAboutPageVersion" }
 androidx-legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
 androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }

@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/borda_redonda"
-        android:backgroundTint="@color/blue_royal"
+        android:backgroundTint="?attr/colorOnBackground"
         android:orientation="vertical"
         android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="@id/guia_bot_hori"
@@ -27,7 +27,7 @@
             android:elevation="20dp"
             android:gravity="center"
             android:text="@string/historico_titulo_fab"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/blue_royal"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -44,7 +44,7 @@
             android:clickable="true"
             android:gravity="center"
             android:text="@string/ainda_nao_contem_dados"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/blue_royal"
             android:visibility="gone" />
 
     </LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Cores da versão clara -->
+    <attr name="colorPrimaryLuz" format="reference" />
+    <attr name="colorPrimaryVariantLuz" format="reference" />
+    <attr name="colorOnPrimaryLuz" format="reference" />
+    <attr name="colorSecondaryLuz" format="reference" />
+    <attr name="colorSecondaryVariantLuz" format="reference" />
+    <attr name="colorOnSecondaryLuz" format="reference" />
+    <attr name="colorBackgroundLuz" format="reference" />
+
+    <!-- Cores da versão escura -->
+    <attr name="colorPrimaryEscuro" format="reference"/>
+    <attr name="colorOnPrimaryEscuro" format="reference" />
+    <attr name="colorSecondaryEscuro" format="reference" />
+    <attr name="colorSecondaryVariantEscuro" format="reference" />
+    <attr name="colorOnSecondaryEscuro" format="reference" />
+    <attr name="colorPrimaryVariantEscuro" format="reference" />
+    <attr name="colorBackgroundEscuro" format="reference" />
+    <attr name="blue_sapphire_dark" format="reference" />
+
+</resources>

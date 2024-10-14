@@ -19,20 +19,23 @@
 
     <style name="Theme.MeuTema" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/blue_royal</item> <!-- Azul Royal -->
-        <item name="colorPrimaryVariant">@color/blue_sapphire</item> <!-- Azul Safira -->
-        <item name="colorOnPrimary">@color/white</item> <!-- Branco -->
+        <item name="colorPrimary">@color/colorPrimaryLuz</item> <!-- Azul Royal -->
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantLuz</item> <!-- Azul Safira -->
+        <item name="colorOnPrimary">@color/colorOnPrimaryLuz</item> <!-- Branco -->
 
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item> <!-- Verde Menta -->
-        <item name="colorSecondaryVariant">@color/green_forest</item> <!-- Verde Floresta -->
-        <item name="colorOnSecondary">@color/white</item> <!-- Branco -->
+        <item name="colorSecondary">@color/colorSecondaryLuz</item> <!-- Verde Menta -->
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantLuz</item> <!-- Verde Floresta -->
+        <item name="colorOnSecondary">@color/colorOnSecondaryLuz</item> <!-- Branco -->
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="statusBarBackground">?attr/colorOnPrimary</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:colorBackground">@color/blue_sky</item> <!-- Azul Céu como cor de fundo -->
+        <item name="android:colorBackground">@color/colorBackgroundLuz</item> <!-- Azul Céu como cor de fundo -->
+        <item name="colorOnBackground">@color/colorOnBackgroundLuz</item>
+        <item name="android:textColorHint">@color/textColorHintLuz</item>
     </style>
 
 

@@ -43,10 +43,13 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
         setContentView(binding.root)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
+        // Vinculcação do Bottom Navigation View
         val navView: BottomNavigationView = binding.navView
 
+        // Controle da navegação
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
 
+        // Configuração de inserção dos fragments para manipulação das telas
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home,
@@ -165,6 +168,8 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
             }
         }
 
+
+
     }
 
     // Função que trata a exibição da tela historico
@@ -224,17 +229,18 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
             animarFab()
         } else {
 
-            val view: View = binding.exibeItens
-
             val snackbar =
-                Snackbar.make(view, "Este resultado já foi salvo!", Snackbar.LENGTH_INDEFINITE)
+                Snackbar.make(
+                    binding.root,
+                    "Este resultado já foi salvo!",
+                    Snackbar.LENGTH_INDEFINITE
+                )
             snackbar.setAction("Ok") {
                 snackbar.dismiss()
             }
             snackbar.setActionTextColor(getColor(R.color.teal_200))
             snackbar.show()
         }
-
 
     }
 
@@ -267,6 +273,13 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
             .translationY(0f)
             .setDuration(500)
             .start()
+
+        binding.sobreposicao.alpha = 0f // Opacidade 0
+        binding.sobreposicao.visibility = View.VISIBLE
+        binding.sobreposicao.animate()
+            .alpha(1f) // Opacidade 1
+            .setDuration(500)
+            .start()
     }
 
     // Função para ocultar o histórico com animação de deslizamento diagonal
@@ -278,6 +291,12 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
             .withEndAction {
                 binding.exibeHistorico.visibility = View.GONE
             } // Define a visibilidade como GONE após a animação
+            .start()
+
+        binding.sobreposicao.animate()
+            .alpha(0f)
+            .setDuration(300)
+            .withEndAction { binding.sobreposicao.visibility = View.GONE }
             .start()
     }
 }

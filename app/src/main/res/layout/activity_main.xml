@@ -9,7 +9,7 @@
         android:id="@+id/nav_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="?attr/statusBarBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -32,8 +32,7 @@
         android:id="@+id/btnSobre"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="5dp"
-        android:backgroundTint="#E4EEFD"
+        android:backgroundTint="?attr/android:colorBackground"
         android:contentDescription="@string/info_desc"
         android:src="@drawable/info_about"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,21 +51,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_historico" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/exibeHistorico"
+    <View
+        android:id="@+id/sobreposicao"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:visibility="gone"
+        android:background="#5D1E1E1E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <View
-        android:id="@+id/exibeItens"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/exibeHistorico"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.023217248" />
+        app:layout_constraintGuide_percent="0.06" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
