@@ -132,7 +132,7 @@ class NucleoFragment : Fragment() {
                 // Adicionar resultado ao histórico
                 historicoListener?.adicionarHistorico(
                     "Dados do Núcleo",
-                    "Comprimento: $compriValor cm \nLargura: $larguraValor cm \nMaterial: $mostraMaterial",
+                    "Comprimento: ${compri.replace(".", ",")} cm \nLargura: ${largura.replace(".", ",")} cm \nMaterial: $mostraMaterial",
                     binding.tvResArea.text.toString() + "\n" + binding.tvResEficiencia.text.toString()
                 )
 

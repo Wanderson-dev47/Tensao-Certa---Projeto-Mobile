@@ -114,7 +114,7 @@ class PrimarioFragment : Fragment() {
                 // Adicionar resultado ao histórico
                 historicoListener?.adicionarHistorico(
                     "Primário",
-                    "Vin: $vinValor \nVout: $voutValor",
+                    "Vin: ${vin.replace(".", ",")} \nVout: ${vout.replace(".", ",")}",
                     "Voltas Primário: $voltasPrimFormatado \nVoltas Secundário: $voltasSecunFormatado"
                 )
             }

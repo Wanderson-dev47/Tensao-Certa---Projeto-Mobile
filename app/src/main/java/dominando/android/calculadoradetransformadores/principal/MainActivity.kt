@@ -4,9 +4,12 @@ import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.ActivityInfo
+import android.os.Build
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.View
 import androidx.activity.OnBackPressedCallback
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavOptions
 import androidx.navigation.findNavController
@@ -131,19 +134,22 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
         }
 
 
-        // Essa função serve para que a UI não seja quebrada e callback funcione corretamente
+        // Essa função serve para que a UI não seja quebrada e que o callback funcione corretamente
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
 
-                // Para encerrar o fragment
+                // Verifica se o histórico está visível e o oculta se necessário
                 if (isHistoricoVisible) {
                     alternarHistoricoApp()
 
                 } else {
-                    // Voltando ao comportamento normal do botão voltar caso não houver fragmentos visíveis
+                    // Voltando ao comportamento normal de "voltar"
                     isEnabled = false
                     onBackPressedDispatcher.onBackPressed()
+
                 }
+
+
             }
         })
 
@@ -167,10 +173,8 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
                 alternarHistoricoApp()
             }
         }
-
-
-
     }
+
 
     // Função que trata a exibição da tela historico
     private fun alternarHistoricoApp() {
@@ -208,6 +212,7 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
 
 
     // Função para adicionar o histórico
+    @RequiresApi(Build.VERSION_CODES.N_MR1)
     override fun adicionarHistorico(tipoOpcao: String, linhaUm: String, linhaDois: String) {
 
         // Verificação para garantir que não haja dados repetidos
@@ -229,16 +234,25 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
             animarFab()
         } else {
 
+            // Para mudar a cor da ação quando no tema escuro ou claro
+            val typedValue = TypedValue()
+            theme.resolveAttribute(
+                android.R.attr.colorSecondary,
+                typedValue,
+                true
+            )
+            val color = typedValue.data
+
             val snackbar =
                 Snackbar.make(
                     binding.root,
                     "Este resultado já foi salvo!",
                     Snackbar.LENGTH_INDEFINITE
                 )
-            snackbar.setAction("Ok") {
+            snackbar.setAction("Certo") {
                 snackbar.dismiss()
             }
-            snackbar.setActionTextColor(getColor(R.color.teal_200))
+            snackbar.setActionTextColor(color)
             snackbar.show()
         }
 
@@ -284,6 +298,13 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
 
     // Função para ocultar o histórico com animação de deslizamento diagonal
     private fun animaOcultarHistorico() {
+
+        binding.sobreposicao.animate()
+            .alpha(0f)
+            .setDuration(300)
+            .withEndAction { binding.sobreposicao.visibility = View.GONE }
+            .start()
+
         binding.exibeHistorico.animate()
             .translationX(binding.exibeHistorico.width.toFloat())
             .translationY(binding.exibeHistorico.height.toFloat())
@@ -291,12 +312,6 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
             .withEndAction {
                 binding.exibeHistorico.visibility = View.GONE
             } // Define a visibilidade como GONE após a animação
-            .start()
-
-        binding.sobreposicao.animate()
-            .alpha(0f)
-            .setDuration(300)
-            .withEndAction { binding.sobreposicao.visibility = View.GONE }
             .start()
     }
 }
