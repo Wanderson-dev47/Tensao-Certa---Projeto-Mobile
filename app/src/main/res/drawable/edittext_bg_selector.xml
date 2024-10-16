@@ -4,9 +4,7 @@
     <!-- Estado focado -->
     <item android:state_focused="true">
         <shape android:shape="rectangle">
-            <stroke
-                android:width="2dp"
-                android:color="@color/teal_200" /> <!-- Cor do contorno ao focar -->
+            <stroke android:width="2dp" android:color="?attr/colorSecondary" /> <!-- Cor do contorno ao focar -->
             <corners android:radius="8dp" />
         </shape>
     </item>
@@ -14,9 +12,7 @@
     <!-- Estado normal -->
     <item>
         <shape android:shape="rectangle">
-            <stroke
-                android:width="1dp"
-                android:color="@color/border_gray_light" /> <!-- Cor do contorno no estado normal -->
+            <stroke android:width="1dp" android:color="@color/border_gray_light" /> <!-- Cor do contorno no estado normal -->
             <corners android:radius="8dp" />
         </shape>
     </item>

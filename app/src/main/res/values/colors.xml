@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Cores usadas pelo sistema -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -48,14 +49,5 @@
     <!-- Cores do resultado no "console" do usuário -->
     <color name="green_mint">#DCFCE7</color> <!-- Verde Menta -->
     <color name="green_forest">#166534</color> <!-- Verde Floresta -->
-
-    <!-- Cores Vivas -->
-    <color name="blue">#0066FD</color>
-    <color name="red">#F75353</color>
-    <color name="yellow">#EDBF0A</color>
-    <color name="green">#10B880</color>
-    <color name="light_blue">#66C5FD</color>
-    <color name="orange">#F39D0B</color>
-    <color name="purple">#6C28D7</color>
 
 </resources>

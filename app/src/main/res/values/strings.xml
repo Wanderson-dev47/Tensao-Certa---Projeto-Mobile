@@ -1,10 +1,9 @@
 <resources>
     <string name="app_name">Tensão Certa</string>
 
+    <!-- Nomes das navegações -->
     <string name="title_home">Cálculo</string>
-    <string name="title_secundario">Secundário</string>
     <string name="title_ajuste">Ajuste Fino</string>
-    <string name="title_nucleo">Núcleo </string>
     <string name="title_historico">Histórico </string>
     <string name="title_info">Informação</string>
 
@@ -19,39 +18,15 @@
     <string name="title_altura_nucleo">Altura do Núcleo (cm)</string>
     <string name="hint_base">Digite Base (ex: 13.45)</string>
     <string name="hint_altura">Digite Altura (ex: 13.45)</string>
+    <string name="title_material_nucleo">Material do Núcleo</string>
 
     <!-- Tela 2 -->
-    <string name="secundario_subtitle">Ajuste as voltas com precisão para o seu transformador</string>
-    <string name="title_tensao_saida_secundario">Tensão de Saida Desejada (Vout)</string>
-    <string name="hint_vout_secundario">Digite Vout (ex: 15.30)</string>
-    <string name="hint_vin_secundario">Digite Vin (ex: 15.30)</string>
-    <string name="title_tensao_entrada_secundario">Tensão de Entrada (Vin)</string>
-    <string name="string_btn_secundario">Calcular Secundário</string>
-
-    <!-- Tela 3 -->
     <string name="ajuste_subtitle">Personalize cada detalhe para máxima eficiência</string>
     <string name="title_ajuste_fino_volts">Ajuste Fino de Voltagem</string>
     <string name="string_btn_ajuste">Calcular Ajuste</string>
     <string name="ajuste_contador">0,0V</string>
 
-    <!-- Tela 4 -->
-    <string name="nucleo_subtitle">Otimize o núcleo para melhor desempenho e durabilidade</string>
-    <string name="title_comprimento">Comprimento do Núcleo (cm) </string>
-    <string name="title_largura">Largura do Núcleo (cm) </string>
-    <string name="digite_comprimento">Digite o comprimento (ex: 25.8)</string>
-    <string name="digite_largura">Digite a largura (ex: 15.4)</string>
-    <string name="title_material_nucleo">Material do Núcleo</string>
-    <string name="string_btn_nucleo">Calcular Núcleo</string>
-    <string name="area_nucleo">Área do núcleo:</string>
-    <string name="eficiencia_estimada">Eficiência estimada:</string>
-    <string name="resultado_eficiencia">95%</string>
-
-    <string name="select_material">Selecione o material</string>
-    <string name="material_ferrite">Ferrite</string>
-    <string name="material_silicio">Silício</string>
-    <string name="histórico">Ir para histórico</string>
-
-
+    <!-- Tela 3 -->
     <string name="info_desc">Botão sobre</string>
     <string name="copiar_texto">Copiar texto</string>
     <string name="linha_separador">Linha separador</string>
@@ -65,7 +40,6 @@
 
     <!--Tela 4 -->
     <string name="info_text_0">Fórmulas de Cálculo do Transformador</string>
-
     <string name="info_text_1">Definições das Variáveis</string>
     <string name="info_text_2">
         A = Área do núcleo do transformador
@@ -78,11 +52,10 @@
         \nNP = Número de espiras do primário
         \n4 = Constante da fórmula
         \n41,9 = Constante da fórmula</string>
-
     <string name="info_text_3">Fórmulas para Cálculos</string>
-    <string name="info_text_5">Atenção:</string>
-    <string name="info_text_6">Os números 4 e 41,9 que aparecem nas fórmulas são constantes e não mudam. São usadas na maioria dos cálculos de transformadores, exceto em casos especiais que não se aplicam aqui.</string>
-    <string name="text_info_7">Sobre o Aplicativo</string>
+    <string name="info_text_4">Atenção:</string>
+    <string name="info_text_5">Os números 4 e 41,9 que aparecem nas fórmulas são constantes e não mudam. São usadas na maioria dos cálculos de transformadores, exceto em casos especiais que não se aplicam aqui.</string>
+    <string name="text_info_6">Sobre o Aplicativo</string>
 
 
 </resources>

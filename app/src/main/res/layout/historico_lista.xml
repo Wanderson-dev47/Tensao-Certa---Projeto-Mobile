@@ -34,7 +34,7 @@
                     android:id="@+id/tipoOpcao"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/title_secundario"
+                    android:text="@string/title_home"
                     android:textColor="#008A7A"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -74,7 +74,7 @@
                     android:id="@+id/tv_lin1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/eficiencia_estimada"
+                    android:text="@string/ainda_nao_contem_dados"
                     android:textColor="#1C4CA9"
                     android:textSize="13sp"
                     android:textStyle="bold" />
@@ -83,7 +83,7 @@
                     android:id="@+id/tv_lin2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/resultado_eficiencia"
+                    android:text="@string/ainda_nao_contem_dados"
                     android:textColor="#1C4CA9"
                     android:textSize="13sp"
                     android:textStyle="bold" />
