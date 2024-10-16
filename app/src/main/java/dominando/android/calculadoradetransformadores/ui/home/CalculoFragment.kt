@@ -110,7 +110,7 @@ class CalculoFragment : Fragment() {
 
                 // Definição das constantes
                 val constanteSP = 4.0 // Seleção do condutor do primário
-                val constateNP = 41.9 // Número de espiras do primário
+                val constanteNP = 41.9 // Número de espiras do primário
 
                 val areaNucleo = baseValor * alturaValor
                 val potenciaNucleo = areaNucleo * areaNucleo
@@ -120,13 +120,13 @@ class CalculoFragment : Fragment() {
                 val correnteEletricaIP = potenciaNucleo / vinValor // Corrente elétrica do primário
                 val selecaoCondutorSP =
                     correnteEletricaIP / constanteSP // Seleção do condutor do primário
-                val qtdEspirasPri = (vinValor * constateNP) / areaNucleo
+                val qtdEspirasPri = (vinValor * constanteNP) / areaNucleo
 
                 // Cálculos do Secundário
                 val correnteEletricaIS = potenciaNucleo / voutValor // Corrente do secundário
                 val selecaoCondutorSS =
                     correnteEletricaIS / constanteSP // Seleção do condutor do secundário
-                val qtdEspirasSec = (voutValor * constateNP) / areaNucleo
+                val qtdEspirasSec = (voutValor * constanteNP) / areaNucleo
 
 
                 // Pega material selecionado e atribui o valor

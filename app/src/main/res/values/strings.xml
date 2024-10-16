@@ -54,7 +54,9 @@
         \n41,9 = Constante da fórmula</string>
     <string name="info_text_3">Fórmulas para Cálculos</string>
     <string name="info_text_4">Atenção:</string>
-    <string name="info_text_5">Os números 4 e 41,9 que aparecem nas fórmulas são constantes e não mudam. São usadas na maioria dos cálculos de transformadores, exceto em casos especiais que não se aplicam aqui.</string>
+    <string name="info_text_5">Os valores 4 e 41,9 nas fórmulas são constantes fixas e não variam. Elas são amplamente utilizadas nos cálculos de transformadores, exceto em situações especiais, que não se aplicam neste caso.</string>
+    <string name="info_text_6">Resultados gerados pelo o aplicativo são amazenados temporariamente, após fechar a aplicação(ou ao trocar de tema) os dados serão perdidos. Portanto, é recomendável copiar as informações do transformador para um bloco de notas ou outro local seguro para futura referência.</string>
+
     <string name="text_info_6">Sobre o Aplicativo</string>
 
 

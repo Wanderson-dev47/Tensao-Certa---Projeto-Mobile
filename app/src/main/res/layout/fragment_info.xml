@@ -31,12 +31,13 @@
                 android:orientation="vertical">
 
                 <!-- Título -->
+
                 <TextView
-                    android:layout_marginTop="15dp"
                     android:id="@+id/info_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="12dp"
                     android:gravity="center"
                     android:text="@string/info_text_0"
                     android:textColor="@color/text_blue_medium"
@@ -44,6 +45,14 @@
                     android:textStyle="bold" />
 
                 <!-- Definições de Variáveis -->
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="24dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ilustracao" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -101,6 +110,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/info_text_5"
+                    android:textAlignment="center"
+                    android:textColor="?attr/android:textColor"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/info_text_6"
+                    android:textAlignment="center"
                     android:textColor="?attr/android:textColor"
                     android:textSize="16sp"
                     android:textStyle="italic" />
