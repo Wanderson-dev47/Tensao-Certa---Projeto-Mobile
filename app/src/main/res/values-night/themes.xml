@@ -33,6 +33,9 @@
         <item name="android:colorBackground">@color/colorBackgroundEscuro</item> <!-- Preto como cor de fundo -->
         <item name="colorOnBackground">@color/colorOnBackgroundEscuro</item>
         <item name="android:textColorHint">@color/textColorHintEscuro</item>
+
+        <item name="android:textColor">#FFFFFF</item>
+
     </style>
 
 

@@ -7,13 +7,8 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="dominando.android.calculadoradetransformadores.ui.home.PrimarioFragment"
-        tools:layout="@layout/fragment_primario" />
-
-    <fragment
-        android:id="@+id/navigation_secundario"
-        android:name="dominando.android.calculadoradetransformadores.ui.secundario.SecundarioFragment"
-        tools:layout="@layout/fragment_secundario" />
+        android:name="dominando.android.calculadoradetransformadores.ui.home.CalculoFragment"
+        tools:layout="@layout/fragment_calculo" />
 
     <fragment
         android:id="@+id/navigation_ajuste"
@@ -21,8 +16,13 @@
         tools:layout="@layout/fragment_ajuste" />
 
     <fragment
-        android:id="@+id/navigation_nucleo"
-        android:name="dominando.android.calculadoradetransformadores.ui.nucleo.NucleoFragment"
-        tools:layout="@layout/fragment_nucleo" />
+        android:id="@+id/navigation_historico"
+        android:name="dominando.android.calculadoradetransformadores.ui.historico.HistoricoFragment"
+        tools:layout="@layout/fragment_historico" />
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="dominando.android.calculadoradetransformadores.ui.info.InfoFragment"
+        tools:layout="@layout/fragment_info" />
 
 </navigation>

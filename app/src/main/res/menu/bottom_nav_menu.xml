@@ -7,18 +7,18 @@
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_secundario"
-        android:icon="@drawable/ic_secundario"
-        android:title="@string/title_secundario" />
-
-    <item
         android:id="@+id/navigation_ajuste"
         android:icon="@drawable/ic_ajuste"
         android:title="@string/title_ajuste" />
 
     <item
-        android:id="@+id/navigation_nucleo"
-        android:icon="@drawable/ic_nucleo"
-        android:title="@string/title_nucleo" />
+        android:id="@+id/navigation_historico"
+        android:icon="@drawable/ic_historico"
+        android:title="@string/title_historico" />
+
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/info_about"
+        android:title="@string/title_info" />
 
 </menu>

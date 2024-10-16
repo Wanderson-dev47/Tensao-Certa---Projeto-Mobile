@@ -28,42 +28,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
 
-    <ImageButton
-        android:id="@+id/btnSobre"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:backgroundTint="?attr/android:colorBackground"
-        android:contentDescription="@string/info_desc"
-        android:src="@drawable/info_about"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabHistorico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:clickable="true"
-        android:contentDescription="@string/histórico"
-        android:focusable="true"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_historico" />
-
     <View
-        android:id="@+id/sobreposicao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:background="#5D1E3B3E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/exibeHistorico"
+        android:id="@+id/atualizaHistorico"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
@@ -78,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9233926" />
+        app:layout_constraintGuide_percent="0.92612857" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guia_left_verti"

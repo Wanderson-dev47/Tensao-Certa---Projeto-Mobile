@@ -1,14 +1,10 @@
 package dominando.android.calculadoradetransformadores.principal
 
-import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Build
 import android.os.Bundle
 import android.util.TypedValue
-import android.view.View
-import androidx.activity.OnBackPressedCallback
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavOptions
@@ -23,21 +19,15 @@ import dominando.android.calculadoradetransformadores.databinding.ActivityMainBi
 import dominando.android.calculadoradetransformadores.model.Historico
 import dominando.android.calculadoradetransformadores.ui.ajuste.AjusteFragment
 import dominando.android.calculadoradetransformadores.ui.historico.HistoricoFragment
-import dominando.android.calculadoradetransformadores.ui.home.PrimarioFragment
-import dominando.android.calculadoradetransformadores.ui.nucleo.NucleoFragment
-import dominando.android.calculadoradetransformadores.ui.secundario.SecundarioFragment
-import dominando.android.calculadoradetransformadores.ui.sobre.SobreActivity
+import dominando.android.calculadoradetransformadores.ui.home.CalculoFragment
 
-class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
-    SecundarioFragment.OnHistoricoListener, AjusteFragment.OnHistoricoListener,
-    NucleoFragment.OnHistoricoListener {
+class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
+    AjusteFragment.OnHistoricoListener {
 
     private lateinit var binding: ActivityMainBinding
 
     // A lista geral ficará diretamente no Main
     private val historicoLista = ArrayList<Historico>()
-
-    private var isHistoricoVisible = false
 
     @SuppressLint("SourceLockedOrientationActivity", "ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,9 +46,9 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home,
-                R.id.navigation_secundario,
                 R.id.navigation_ajuste,
-                R.id.navigation_nucleo
+                R.id.navigation_historico,
+                R.id.navigation_info
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -72,9 +62,9 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
         // Define a ordem dos itens da BottomNavigationView
         val navItemsOrder = listOf(
             R.id.navigation_home,
-            R.id.navigation_secundario,
             R.id.navigation_ajuste,
-            R.id.navigation_nucleo
+            R.id.navigation_historico,
+            R.id.navigation_info
         )
 
         navView.setOnItemSelectedListener { item ->
@@ -111,104 +101,29 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
                     true
                 }
 
-                R.id.navigation_secundario -> {
-                    navController.navigate(R.id.navigation_secundario, null, navOptions)
-                    lastSelectedItemId = R.id.navigation_secundario
-                    true
-                }
-
                 R.id.navigation_ajuste -> {
                     navController.navigate(R.id.navigation_ajuste, null, navOptions)
                     lastSelectedItemId = R.id.navigation_ajuste
                     true
                 }
 
-                R.id.navigation_nucleo -> {
-                    navController.navigate(R.id.navigation_nucleo, null, navOptions)
-                    lastSelectedItemId = R.id.navigation_nucleo
+                R.id.navigation_historico -> {
+                    navController.navigate(R.id.navigation_historico, null, navOptions)
+                    lastSelectedItemId = R.id.navigation_historico
+                    true
+                }
+
+                R.id.navigation_info -> {
+                    navController.navigate(R.id.navigation_info, null, navOptions)
+                    lastSelectedItemId = R.id.navigation_info
                     true
                 }
 
                 else -> false
             }
         }
-
-
-        // Essa função serve para que a UI não seja quebrada e que o callback funcione corretamente
-        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-
-                // Verifica se o histórico está visível e o oculta se necessário
-                if (isHistoricoVisible) {
-                    alternarHistoricoApp()
-
-                } else {
-                    // Voltando ao comportamento normal de "voltar"
-                    isEnabled = false
-                    onBackPressedDispatcher.onBackPressed()
-
-                }
-
-
-            }
-        })
-
-        binding.btnSobre.setOnClickListener {
-            val intent = Intent(this, SobreActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding.fabHistorico.setOnClickListener {
-            alternarHistoricoApp()
-
-            val fadeIn = ObjectAnimator.ofFloat(binding.fabHistorico, "alpha", 1f, 0.1f, 1f)
-            fadeIn.duration = 500
-            fadeIn.repeatMode = ObjectAnimator.REVERSE
-            fadeIn.start()
-        }
-
-        // binding.root para quando o usuário clicar fora do histórico, ele também fechar automaticamente
-        binding.root.setOnClickListener {
-            if (isHistoricoVisible) {
-                alternarHistoricoApp()
-            }
-        }
     }
 
-
-    // Função que trata a exibição da tela historico
-    private fun alternarHistoricoApp() {
-        val transaction = supportFragmentManager.beginTransaction()
-
-        if (isHistoricoVisible) {
-            // Situação onde o usuário clica em voltar do historico
-            animaOcultarHistorico()
-
-            // Isso pra garantir que antes de remover a animação seja exibida sem problemas
-            binding.exibeHistorico.animate()
-                .setDuration(300)
-                .withEndAction {
-                    transaction.remove(supportFragmentManager.findFragmentById(R.id.exibeHistorico)!!)
-                }
-            isHistoricoVisible = false
-
-        } else {
-            animaExibirHistorico()
-
-            // Situação onde o usuário clica no historico
-            transaction.replace(R.id.exibeHistorico, HistoricoFragment())
-            transaction.addToBackStack(null)
-
-            // Garantia de que a animação aconteca após o fragment for adicionado
-            binding.exibeHistorico.post {
-                animaExibirHistorico()
-            }
-
-            isHistoricoVisible = true
-        }
-
-        transaction.commit()
-    }
 
 
     // Função para adicionar o histórico
@@ -228,10 +143,9 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
 
             // Atualização do fragment, caso esteja vísivel
             val fragmentHistorico =
-                supportFragmentManager.findFragmentById(R.id.exibeHistorico) as? HistoricoFragment
+                supportFragmentManager.findFragmentById(R.id.atualizaHistorico) as? HistoricoFragment
             fragmentHistorico?.atualizarDados(novoHistorico)
 
-            animarFab()
         } else {
 
             // Para mudar a cor da ação quando no tema escuro ou claro
@@ -263,55 +177,4 @@ class MainActivity : AppCompatActivity(), PrimarioFragment.OnHistoricoListener,
         return historicoLista
     }
 
-
-    // Para quando um novo dado for salvo
-    private fun animarFab() {
-        val shakeAnimator =
-            ObjectAnimator.ofFloat(binding.fabHistorico, "translationX", 0f, 15f, -15f, 0f)
-        shakeAnimator.duration = 500
-        shakeAnimator.repeatMode = ObjectAnimator.REVERSE
-        shakeAnimator.start()
-    }
-
-
-    // Função para exibir o histórico com animação de deslizamento diagonal
-    private fun animaExibirHistorico() {
-        binding.exibeHistorico.translationX =
-            binding.exibeHistorico.width.toFloat() // Começando fora da tela na diagonal
-        binding.exibeHistorico.translationY = binding.exibeHistorico.height.toFloat()
-
-        binding.exibeHistorico.visibility = View.VISIBLE
-
-        binding.exibeHistorico.animate()
-            .translationX(0f)
-            .translationY(0f)
-            .setDuration(500)
-            .start()
-
-        binding.sobreposicao.alpha = 0f // Opacidade 0
-        binding.sobreposicao.visibility = View.VISIBLE
-        binding.sobreposicao.animate()
-            .alpha(1f) // Opacidade 1
-            .setDuration(500)
-            .start()
-    }
-
-    // Função para ocultar o histórico com animação de deslizamento diagonal
-    private fun animaOcultarHistorico() {
-
-        binding.sobreposicao.animate()
-            .alpha(0f)
-            .setDuration(300)
-            .withEndAction { binding.sobreposicao.visibility = View.GONE }
-            .start()
-
-        binding.exibeHistorico.animate()
-            .translationX(binding.exibeHistorico.width.toFloat())
-            .translationY(binding.exibeHistorico.height.toFloat())
-            .setDuration(300)
-            .withEndAction {
-                binding.exibeHistorico.visibility = View.GONE
-            } // Define a visibilidade como GONE após a animação
-            .start()
-    }
 }

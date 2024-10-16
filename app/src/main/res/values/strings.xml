@@ -1,18 +1,24 @@
 <resources>
     <string name="app_name">Tensão Certa</string>
 
-    <string name="title_home">Primário</string>
+    <string name="title_home">Cálculo</string>
     <string name="title_secundario">Secundário</string>
     <string name="title_ajuste">Ajuste Fino</string>
     <string name="title_nucleo">Núcleo </string>
+    <string name="title_historico">Histórico </string>
+    <string name="title_info">Informação</string>
 
     <!-- Tela 1 -->
     <string name="string_subtitle">Calcule e projete seus transformadores com facilidade</string>
-    <string name="title_tensao_saida">Tensão de Saida (Vout)</string>
+    <string name="title_tensao_saida">Tensão do Secundário (Vout)</string>
     <string name="hint_vout">Digite Vout (ex: 12.34)</string>
     <string name="hint_vin">Digite Vin (ex: 12.34)</string>
-    <string name="title_tensao_entrada">Tensão de Entrada (Vin)</string>
+    <string name="title_tensao_entrada">Tensão do Primário (Vin)</string>
     <string name="string_btn">Calcular Primário</string>
+    <string name="title_base_nucleo">Base do Núcleo (cm)</string>
+    <string name="title_altura_nucleo">Altura do Núcleo (cm)</string>
+    <string name="hint_base">Digite Base (ex: 13.45)</string>
+    <string name="hint_altura">Digite Altura (ex: 13.45)</string>
 
     <!-- Tela 2 -->
     <string name="secundario_subtitle">Ajuste as voltas com precisão para o seu transformador</string>
@@ -54,7 +60,29 @@
     <string name="primario_ilustrcao">Primário ilustração</string>
     <string name="secundario_ilustracao">Secundário ilustração</string>
     <string name="ajuste_ilustracao">Ajuste ilustração</string>
-    <string name="nucleo_ilustracao">Núcleo ilustração\n</string>
+    <string name="nucleo_ilustracao">Núcleo ilustração</string>
+
+
+    <!--Tela 4 -->
+    <string name="info_text_0">Fórmulas de Cálculo do Transformador</string>
+
+    <string name="info_text_1">Definições das Variáveis</string>
+    <string name="info_text_2">
+        A = Área do núcleo do transformador
+        \nb = Medida da base de retângulo
+        \nh = Medida da altura do retângulo
+        \nP = Potência do transformador
+        \nIP = Corrente elétrica do primário
+        \nEP = Tensão elétrica do primário
+        \nSP = Seleção do condutor do primário
+        \nNP = Número de espiras do primário
+        \n4 = Constante da fórmula
+        \n41,9 = Constante da fórmula</string>
+
+    <string name="info_text_3">Fórmulas para Cálculos</string>
+    <string name="info_text_5">Atenção:</string>
+    <string name="info_text_6">Os números 4 e 41,9 que aparecem nas fórmulas são constantes e não mudam. São usadas na maioria dos cálculos de transformadores, exceto em casos especiais que não se aplicam aqui.</string>
+    <string name="text_info_7">Sobre o Aplicativo</string>
 
 
 </resources>
