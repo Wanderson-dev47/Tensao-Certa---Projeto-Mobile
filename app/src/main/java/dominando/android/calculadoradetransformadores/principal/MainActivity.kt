@@ -23,6 +23,12 @@ import dominando.android.calculadoradetransformadores.ui.ajuste.AjusteFragment
 import dominando.android.calculadoradetransformadores.ui.historico.HistoricoFragment
 import dominando.android.calculadoradetransformadores.ui.home.CalculoFragment
 
+/*
+ * Copyright (c) 2024 Wanderson Brito
+ * Todos os direitos reservados.
+ * Este código não pode ser utilizado ou distribuído sem permissão explícita do autor.
+ */
+
 class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
     AjusteFragment.OnHistoricoListener {
 

@@ -14,6 +14,12 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+/*
+ * Copyright (c) 2024 Wanderson Brito
+ * Todos os direitos reservados.
+ * Este código não pode ser utilizado ou distribuído sem permissão explícita do autor.
+ */
+
 class AjusteFragment : Fragment() {
 
     private val binding: FragmentAjusteBinding by lazy {

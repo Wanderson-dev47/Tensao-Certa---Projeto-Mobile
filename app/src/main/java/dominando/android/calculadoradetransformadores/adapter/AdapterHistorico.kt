@@ -13,6 +13,12 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import dominando.android.calculadoradetransformadores.databinding.HistoricoListaBinding
 import dominando.android.calculadoradetransformadores.model.Historico
 
+/*
+ * Copyright (c) 2024 Wanderson Brito
+ * Todos os direitos reservados.
+ * Este código não pode ser utilizado ou distribuído sem permissão explícita do autor.
+ */
+
 class AdapterHistorico(private val historicoLista: List<Historico>, private val context: Context) :
     Adapter<AdapterHistorico.HistoricoViewHolder>() {
 

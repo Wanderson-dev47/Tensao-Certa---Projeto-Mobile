@@ -19,6 +19,12 @@ import java.math.BigDecimal
 import java.text.NumberFormat
 import java.util.Locale
 
+/*
+ * Copyright (c) 2024 Wanderson Brito
+ * Todos os direitos reservados.
+ * Este código não pode ser utilizado ou distribuído sem permissão explícita do autor.
+ */
+
 class CalculoFragment : Fragment() {
 
     private val binding: FragmentCalculoBinding by lazy {

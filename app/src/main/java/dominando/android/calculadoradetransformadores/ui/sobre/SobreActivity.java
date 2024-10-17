@@ -10,6 +10,12 @@ import dominando.android.calculadoradetransformadores.R;
 import mehdi.sakout.aboutpage.AboutPage;
 import mehdi.sakout.aboutpage.Element;
 
+/*
+ * Copyright (c) 2024 Wanderson Brito
+ * Todos os direitos reservados.
+ * Este código não pode ser utilizado ou distribuído sem permissão explícita do autor.
+ */
+
 public class SobreActivity extends AppCompatActivity {
 
     @Override

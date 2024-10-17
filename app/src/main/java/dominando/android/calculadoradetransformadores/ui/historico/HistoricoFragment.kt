@@ -12,6 +12,12 @@ import dominando.android.calculadoradetransformadores.adapter.AdapterHistorico
 import dominando.android.calculadoradetransformadores.databinding.FragmentHistoricoBinding
 import dominando.android.calculadoradetransformadores.model.Historico
 
+/*
+ * Copyright (c) 2024 Wanderson Brito
+ * Todos os direitos reservados.
+ * Este código não pode ser utilizado ou distribuído sem permissão explícita do autor.
+ */
+
 class HistoricoFragment : Fragment() {
 
     private val historicoLista = ArrayList<Historico>()

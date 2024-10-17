@@ -20,6 +20,11 @@ import android.webkit.WebView;
 import dominando.android.calculadoradetransformadores.databinding.FragmentInfoBinding;
 import dominando.android.calculadoradetransformadores.ui.sobre.SobreActivity;
 
+/*
+ * Copyright (c) 2024 Wanderson Brito
+ * Todos os direitos reservados.
+ * Este código não pode ser utilizado ou distribuído sem permissão explícita do autor.
+ */
 
 public class InfoFragment extends Fragment {
 
