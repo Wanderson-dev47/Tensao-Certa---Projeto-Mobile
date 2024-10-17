@@ -8,6 +8,7 @@ import android.util.TypedValue
 import androidx.activity.OnBackPressedCallback
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
 import androidx.navigation.NavOptions
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
     AjusteFragment.OnHistoricoListener {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var navController: NavController
 
     // A lista geral ficará diretamente no Main
     private val historicoLista = ArrayList<Historico>()
@@ -41,7 +43,7 @@ class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
         val navView: BottomNavigationView = binding.navView
 
         // Controle da navegação
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+        navController = findNavController(R.id.nav_host_fragment_activity_main)
 
         // Configuração de inserção dos fragments para manipulação das telas
         val appBarConfiguration = AppBarConfiguration(
@@ -124,7 +126,6 @@ class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
             }
         }
 
-
         // Lógica para o botão de voltar com controle da navegação
         this.onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
@@ -140,7 +141,16 @@ class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
                 }
             }
         })
+    }
 
+    // Para garantir que a navegação não quebre após mudar de tema.
+    override fun onResume() {
+        super.onResume()
+        // Garantindo que o navView seja referenciado corretamente
+        val navView: BottomNavigationView = binding.navView
+
+        // Reconfigure o NavController
+        navView.setupWithNavController(navController)
     }
 
 
@@ -194,8 +204,4 @@ class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
     fun getHistoricoLista(): List<Historico> {
         return historicoLista
     }
-
-
-
-
 }
