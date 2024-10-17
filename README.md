@@ -49,7 +49,7 @@ O **Tensão Certa** é projetado para ser intuitivo e acessível, com uma interf
 ## 🔧 Tecnologias Utilizadas
 
 - **Kotlin**: Linguagem principal usada para desenvolver o aplicativo Android.
-- **Java**: Utilizado para importar a biblioteca [AboutPage](https://github.com/medyo/android-about-page) e outras dependências.
+- **Java**: Utilizado para importar a biblioteca [AboutPage](https://github.com/medyo/android-about-page) e as funcionalidades de informações.
 - **XML**: Para construção dos layouts.
 - **Jetpack Navigation**: Gerenciamento de navegação entre fragmentos.
 - **Data Binding**: Vinculação de componentes da interface com dados dinâmicos.
