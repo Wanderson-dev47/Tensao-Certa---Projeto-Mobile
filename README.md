@@ -1,7 +1,7 @@
 ## Licença
 
-Copyright (c) 2024 Wanderson Brito. Todos os direitos reservados.
-
+Copyright (c) 2024 Wanderson Brito. 
+Todos os direitos reservados.
 Este software é fornecido apenas para uso pessoal e não pode ser utilizado para fins comerciais ou redistribuído sem permissão explícita do autor.
 
 # Tensão Certa 📱⚡
