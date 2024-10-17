@@ -1,3 +1,9 @@
+## Licença
+
+Copyright (c) 2024 Wanderson Brito. Todos os direitos reservados.
+
+Este software é fornecido apenas para uso pessoal e não pode ser utilizado para fins comerciais ou redistribuído sem permissão explícita do autor.
+
 # Tensão Certa 📱⚡
 
 O **Tensão Certa** é um aplicativo intuitivo e eficiente projetado para engenheiros elétricos, estudantes, eletricistas e entusiastas da eletrônica. Ele facilita o cálculo preciso das voltagens primárias e secundárias de transformadores, tornando o design e a verificação de transformadores mais simples e rápidos.
