@@ -5,6 +5,7 @@ import android.content.pm.ActivityInfo
 import android.os.Build
 import android.os.Bundle
 import android.util.TypedValue
+import androidx.activity.OnBackPressedCallback
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavOptions
@@ -57,7 +58,7 @@ class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
 
         // Essa é a lógica para troca de telas com animações, com o navigation
         // Armazena o ID do último item selecionado
-        var lastSelectedItemId = R.id.navigation_home // ou outro item padrão
+        var lastSelectedItemId = R.id.navigation_home
 
         // Define a ordem dos itens da BottomNavigationView
         val navItemsOrder = listOf(
@@ -122,8 +123,25 @@ class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
                 else -> false
             }
         }
-    }
 
+
+        // Lógica para o botão de voltar com controle da navegação
+        this.onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+
+                // Se for diferente de home ele fecha e volta pro início
+                if (navController.currentDestination?.id != R.id.navigation_home) {
+                    navController.popBackStack(R.id.navigation_home, false)
+                } else {
+                    // Retorna ao comportamento normal do botão back
+                    isEnabled = false
+                    onBackPressedDispatcher.onBackPressed()
+                    finish() // Fecha o aplicativo se estiver na tela inicial
+                }
+            }
+        })
+
+    }
 
 
     // Função para adicionar o histórico
@@ -176,5 +194,8 @@ class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
     fun getHistoricoLista(): List<Historico> {
         return historicoLista
     }
+
+
+
 
 }
