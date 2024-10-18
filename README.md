@@ -96,7 +96,7 @@ Se você tiver dúvidas, sugestões ou quiser contribuir para o projeto, sinta-s
 Você pode instalar o aplicativo diretamente no seu dispositivo Android sem a necessidade de ter acesso ao Android Studio. Siga os passos abaixo:
 
 1. **Baixe o APK**:
-   - [Baixe aqui!](https://drive.google.com/file/d/1a_xiR4lf4aT-br_1UZ0TzkeHVrbNdcho/view?usp=sharing)
+   - [Baixe aqui!](https://drive.google.com/file/d/1lXztVJO7aLZoXPzo-QhyGoaSwtXAMADm/view?usp=drivesdk)
 
 2. **Permita a instalação de aplicativos de fontes desconhecidas**:
    - Ative a opção **Instalar aplicativos de fontes desconhecidas**. Se você estiver usando o Android 8.0 (Oreo) ou superior, será necessário permitir a instalação especificamente para o navegador ou gerenciador de arquivos que você usará para instalar o APK.
