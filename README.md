@@ -10,6 +10,13 @@ Este software é fornecido apenas para uso pessoal e não pode ser utilizado par
 
 O **Tensão Certa** é um aplicativo intuitivo e eficiente projetado para engenheiros elétricos, estudantes, eletricistas e entusiastas da eletrônica. Ele facilita o cálculo preciso das voltagens primárias e secundárias de transformadores, tornando o design e a verificação de transformadores mais simples e rápidos.
 
+## 📹 Vídeo Demonstração
+
+Confira o vídeo de demonstração para ver o aplicativo em ação!
+
+[Assista ao vídeo aqui!](https://drive.google.com/file/d/1a8f7nJ0dfuojumo8OREaBnZHLPAKQZaO/view?usp=drive_link)
+
+
 ## 📋 Funcionalidades Principais
 
 ### 1. Tela Inicial
