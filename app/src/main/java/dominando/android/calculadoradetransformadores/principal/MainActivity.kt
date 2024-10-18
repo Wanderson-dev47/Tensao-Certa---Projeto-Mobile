@@ -161,7 +161,7 @@ class MainActivity : AppCompatActivity(), CalculoFragment.OnHistoricoListener,
 
 
     // Função para adicionar o histórico
-    @RequiresApi(Build.VERSION_CODES.N_MR1)
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun adicionarHistorico(tipoOpcao: String, linhaUm: String, linhaDois: String) {
 
         // Verificação para garantir que não haja dados repetidos
